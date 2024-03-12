@@ -17,7 +17,7 @@ import basics
 
 # Visualizing the colour channels
 # blank = basics.createBlank(img.shape[0], img.shape[1], 1)
-# blue, red, green = cv.merge([b, blank, blank]), cv.merge([blank, g, blank]), cv.merge([blank, blank, r])
+# blue, green, red = cv.merge([b, blank, blank]), cv.merge([blank, g, blank]), cv.merge([blank, blank, r])
 # cv.imshow('Blue', blue)
 # cv.imshow('Green', green)
 # cv.imshow('Red', red)

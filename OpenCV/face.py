@@ -7,15 +7,30 @@ import numpy as np
 """ Face Detection """
 # img = cv.imread("OpenCV/Data/Images/4.jpg")
 
-# # Haaar Cascade [ Not very accurate (Noise prone), but easy and fast ]
+# # Haar Cascade [ Not very accurate (Noise prone), but easy and fast ]
 # data = cv.CascadeClassifier('OpenCV/Data/faceData.xml')
 # faces = data.detectMultiScale(basics.gray(img), 1.1, 2)
 
 # for (x1, y1, x2, y2) in faces:
 #     cv.rectangle(img, (x1, y1), (x1+x2, y1+y2), (0, 0, 255), 2)
 
-# cv.imshow('Face', img)
+# cv.imshow('Detected Faces', img)
 # cv.waitKey(0)
+
+""" Image Detection in Video Feed """
+# cap = cv.VideoCapture(0)
+# data = cv.CascadeClassifier('OpenCV/Data/faceData.xml')
+
+# while True:
+#     ret, frame = cap.read()
+#     faces = data.detectMultiScale(basics.gray(frame), 1.1, 2)
+
+#     for (x1, y1, x2, y2) in faces:
+#         cv.rectangle(frame, (x1, y1), (x1+x2, y1+y2), (0, 0, 255), 2)
+
+#     cv.imshow('Detected Faces', frame)
+#     if cv.waitKey(33) & 0xFF == ord('q'):
+#         break
 
 """ Face Recognition """
 # Extracting and Labelling the training data (includes detection)
