@@ -98,6 +98,6 @@ detectFace(img)
 
 """
 Note : The built-in face recognizer (one we discussed above) is not very accurate, and is not recommended for
-       large projects. Also, not only do we have a mlimited training dataset, but also the training data is not
+       large projects. Also, not only do we have a limited training dataset, but also the training data is not
        very accurate. So, it is recommended to use a more advanced and accurate face recognizer, like DNN.
 """
