@@ -1,8 +1,16 @@
 
 import os
-import basics
 import cv2 as cv
 import numpy as np
+
+""" Defining Functions """
+def rescale(img, scale=0.5):
+    width = int(img.shape[1] * scale)
+    height = int(img.shape[0] * scale)
+    return cv.resize(img, (width, height), interpolation=cv.INTER_AREA)
+
+def gray(img):
+    return cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
 """ Face Detection """
 # img = cv.imread("OpenCV/Data/Images/4.jpg")
