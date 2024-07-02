@@ -16,6 +16,6 @@ This repository is a curated collection of Jupyter notebooks that I have created
 
 ## Getting Started
 
-To get started with these notebooks, you will need to have Python and Jupyter Notebook installed on your system. The instructions below will guide you through setting up the environment and running the notebooks.
+Just clone the repo, download required libraries (as mentioned for the particular files) and you are good to go!
 
 ---
